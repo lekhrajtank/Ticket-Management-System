@@ -23,6 +23,31 @@ A simple ticket management system built with Node.js and MongoDB. This applicati
 - Node.js (v14 or higher)
 - MongoDB (installed locally or using MongoDB Atlas)
 
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/lekhrajtank/Ticket-Management-System.git
+   ```
+   ```bash
+   cd ticket-management
+   ```
+ 2. Install dependencies:
+    ```bash
+    npm install
+     ```
+ 3. Configure Environment:
+    + Create a .env file in the root directory and add your MongoDB connection string:
+    ```
+    MONGO_URI=mongodb://localhost:27017/ticket-management
+    ```
+ 4. Run the Application:
+    + Start the server:
+       ```bash
+       npm start
+       ```
+   The server will be available at http://localhost:5000.            
+
+
 ## API Documentation
 Base URL
 http://localhost:5000/api/tickets
@@ -41,6 +66,7 @@ http://localhost:5000/api/tickets
     "status": "open",
     "createdAt": "2024-09-22T10:00:00.000Z"
   }
+  ```
   
 2. Create a new ticket
 + URL: /
